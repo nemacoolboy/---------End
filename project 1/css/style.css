@@ -178,15 +178,18 @@ footer {
   text-decoration: none;
 }
 
+.news__full {
+  width: calc((100% - 100px) / 1);
+  margin: 0 0 15px 0;
+  border: 1px solid black;
+  padding: 5px;
+}
+
 .advertising {
   max-width: 1600px;
-  max-height: 500px;
 }
 
 .adv__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;

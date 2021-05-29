@@ -1,52 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="js/main.js">
-    <title>Алчевский портал</title>
+    <title>City17</title>
 </head>
 
 <body>
-
-    <div class="header">
-        <img class="main__logo" src="" alt="logo">
-        <h1 class="header-text">ГОРОД #</h1>
-        <ul class="menu__burger">
-            <li>menu</li>
-        </ul>
-
-    </div>
-    <br>
-    <br><br>
-    <h2>Свежие новости</h2>
-    <div>
-        <div class="block-left">18.04.2021<br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus accusantium
-                consequuntur
-                autem
-                excepturi vel aspernatur adipisci eveniet, totam reiciendis exercitationem! Corporis cupiditate ea
-                consectetur
-                magnam reprehenderit ex, minima qui?</p>
+    <header>
+        <div class="logotype">
+            <img src="img/logotype.png" alt="logotype">
         </div>
-        <div class="block-right">19.04.2021
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsum temporibus error, corrupti
-                excepturi
-                laboriosam
-                totam nobis suscipit itaque delectus quis obcaecati earum et maxime cumque debitis voluptate eos
-                quisquam?
+        <div class="burger" onclick="myFunction(this)">
+            <span class="burger__line1"></span>
+            <span class="burger__line2"></span>
+            <span class="burger__line3"></span>
+        </div>
+
+    </header>
+    <main class="main">
+        <nav class="sidebar">
+            <a href="#">Конакты</a>
+            <a href="#">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="#">Форум</a>
+            <a href="#">Реклама</a>
+
+        </nav>
+        <div class="main-content">
+            <h2 class="main__title">Новости</h2>
+            <div class="news">
+                <div class="news__full">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                        blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Odit, qui?</p>
+                    <a href="#">Читать полностью</a>
+                </div>
+                <div class="news__full">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                        blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Odit, qui?</p>
+                    <a href="#">Читать полностью</a>
+                </div>
+                <div class="news__full">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                        blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Odit, qui?</p>
+                    <a href="#">Читать полностью</a>
+                </div>
+                <div class="news__full">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                        blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, qui?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, qui?Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Odit, qui?</p>
+                    <a href="#">Читать полностью</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="topfooter">
+            <p> Design by r4batyaga &copy;
             </p>
         </div>
-    </div>
-    <footer class="footer">
-        <br>
-        <p>2021 Все права защищены &copy;</p>
-
+        <hr>
+        <div class="lowfooter">
+            All rights reserved 2021 &copy;
+        </div>
 
     </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 
 </html>
