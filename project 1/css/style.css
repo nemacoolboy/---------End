@@ -71,8 +71,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-right: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -81,14 +81,33 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  cursor: pointer;
 }
 
-.burger__line {
+.burger__line1,
+.burger__line2,
+.burger__line3 {
   margin: 0 auto;
   padding: 0;
   height: 3px;
-  width: 35px;
+  width: 25px;
   background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .burger__line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(300deg) translate(-5px, 3px);
+}
+
+.change .burger__line2 {
+  opacity: 0;
+}
+
+.change .burger__line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .main {

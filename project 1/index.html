@@ -14,10 +14,10 @@
         <div class="logotype">
             <img src="img/logotype.png" alt="logotype">
         </div>
-        <div class="burger">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
+        <div class="burger" onclick="myFunction(this)">
+            <span class="burger__line1"></span>
+            <span class="burger__line2"></span>
+            <span class="burger__line3"></span>
         </div>
 
     </header>
@@ -130,7 +130,7 @@
 
     <footer>
         <div class="topfooter">
-            <p> Design by r4batyaga&copy;
+            <p> Design by r4batyaga &copy;
             </p>
         </div>
         <hr>
@@ -139,6 +139,11 @@
         </div>
 
     </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 
 </html>
