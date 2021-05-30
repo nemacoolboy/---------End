@@ -1,52 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="js/main.js">
-    <title>Алчевский портал
-    </title>
+    <title>City17</title>
 </head>
 
 <body>
+    <header>
+        <div class="logotype">
+            <img src="img/logotype.png" alt="logotype">
+        </div>
+        <div class="burger" onclick="myFunction(this)">
+            <span class="burger__line1"></span>
+            <span class="burger__line2"></span>
+            <span class="burger__line3"></span>
+        </div>
 
-    <div class="header">
-        <img class="main__logo" src="" alt="logo">
-        <h1 class="header-text">ГОРОД #</h1>
-        <ul class="menu__burger">
-            <li>menu</li>
-        </ul>
+    </header>
+    <main class="main__feedback">
+        <nav class="sidebar">
+            <a href="#">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="#">Форум</a>
+            <a href="#">Реклама</a>
+            <a href="news.html">Новости</a>
 
-    </div>
+
+        </nav>
+        <div class="main-content">
+            <h2 class="main__title">Для связи с нами используйте один из вариантов</h2>
+            <div class="contants">
+                <ul class="list">
+                    <li>email: nemacoolboy@hotmail.com
+                    <li>instagram: <a href="https://www.instagram.com/r4batyaga/" target="_blank">R4BATYAGA</a>
+                </ul>
+                <p>Или заполните форму заявки с вашими данными для связи</p>
+            </div>
+            <div class="form">
+                <form action="#" class="form">
+                    Ваше имя <input type="text" placeholder="Имя" class="input">
+                    Почта <input type="email" placeholder="example@mail.ru" class="input">
+                    Поле для ввода дополнительной информации :
+                    <textarea cols="70" rows="10" placeholder="Введите дополнительные данные" class="input"></textarea>
+                    <label>Согласны с обработкой ваших данных в сети интернет <input type="checkbox"></label>
+                    <button type="submit" class="submit">Отправить</button>
+                    <button type="reset" class="reset">Удалить</button>
+                </form>
+            </div>
 
 
-    <div class="feedback">
-        <h2>Для связи с нами используйте один из адресов:</h2>
-        <ul class="list">
-            <li>email: nemacoolboy@hotmail.com
-            <li>instagram: <a href="https://www.instagram.com/r4batyaga/" target="_blank">R4BATYAGA</a>
-        </ul>
-        <form action="#" class="forma">
-            <p>Или заполните форму заявки с вашими данными для связи</p>
-            Ваше имя <input type="text" placeholder="Имя" class="input"><br>
-            Почта <input type="email" placeholder="example@mail.ru" class="input"><br>
-            <br>
-            Поле для ввода дополнительной информации : <br>
-            <textarea cols="70" rows="10" placeholder="Введите дополнительные данные" class="input"></textarea><br>
-            <label>Согласны с обработкой ваших данных в сети интернет <input type="checkbox"></label><br>
-            <button type="submit" class="submit">Отправить</button>
-            <button type="reset" class="reset">Удалить</button>
-    </div>
-    </form>
-    <footer class="footer">
-        <br>
-        <p>2021 Все права защищены &copy;</p>
+        </div>
 
+
+
+    </main>
+
+
+    <footer>
+        <div class="topfooter">
+            <p> Design by r4batyaga &copy;
+            </p>
+        </div>
+        <hr>
+        <div class="lowfooter">
+            All rights reserved 2021 &copy;
+        </div>
 
     </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 
 </html>
